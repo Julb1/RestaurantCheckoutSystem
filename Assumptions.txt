@@ -1,0 +1,48 @@
+1. Missing API specification
+To test the new endpoint, the following information is required but not provided in the assignment:
+- Base URL and endpoint paths
+- Supported HTTP methods
+- Request and response schemas
+- Error handling and status codes
+
+Due to the absence of a formal API contract, API interaction is mocked conceptually, and the core business logic is tested directly;
+but added a reference to a fictitious endpoint in some places for example
+
+2. Service charge calculation
+The assignment states that a 10% service charge is applied to food.
+Assumption: The service charge applies to the final bill for all items. It is calculated after discounts and before rounding.
+
+3. “Drinks have a 30% discount when ordered before 19:00”
+Not specified:
+- is condition strict < 19:00 or <= 19:00;
+- if the order is partial how the time for each item is stored
+Assumption: 
+19:00 is the cutoff time after which the discount no longer applies.
+The discount is determined individually for each item based on its order time, not the time of the entire order. 
+
+4. Meaning of “a group of X people”
+The scenarios repeatedly mention “a group of X people”, however no requirement states that the number of people affects pricing or calculation logic.
+Assumption: The number of people does not affect the order calculation and is not sent to the API. Only the ordered items influence the bill total.
+
+5. Missing order time in Scenario 1
+Scenario 1 does not specify the order time, which is critical due to time-based drink discounts.
+Assumption:
+Two test cases are created:
+A. Order placed before 19:00 (drink discount applies)
+B. Order placed after 19:00 (no drink discount)
+
+6. Missing order time in Scenario 3
+Scenario 3 does not specify the time when the order update (cancellation) occurs.
+Assumption:
+By analogy with Scenario 2, it is assumed that the order update occurs after 20:00.
+
+7. Ambiguous wording in Scenario 3
+The phrase “A group of 4 people order a starter, 1 mains and a drink each” is ambiguous.
+Assumption:
+Each person orders 1 starter + 1 main + 1 drink
+Resulting in a total of: 4 starters + 4 mains + 4 drinks
+
+
+
+
+
