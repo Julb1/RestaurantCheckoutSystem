@@ -101,7 +101,7 @@ namespace SpecFlowProject.Features
             {
                 this.ScenarioStart();
 #line 4
-    testRunner.Given("an order for a group of 4 people placed at 18:30", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("an order for a group of 4 people placed at 18:59", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
     testRunner.And("the order contains 4 starter, 4 mains and 4 drinks", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -150,7 +150,7 @@ namespace SpecFlowProject.Features
             {
                 this.ScenarioStart();
 #line 12
-    testRunner.Given("an order for a group of 4 people placed at 20:00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("an order for a group of 4 people placed at 19:00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 13
     testRunner.And("the order contains 4 starter, 4 mains and 4 drinks", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -196,7 +196,7 @@ namespace SpecFlowProject.Features
             {
                 this.ScenarioStart();
 #line 19
-    testRunner.Given("an order for a group of 2 people placed at 18:30", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("an order for a group of 2 people placed at 18:55", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 20
     testRunner.And("the order contains 1 starter, 2 mains and 2 drinks", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -211,7 +211,7 @@ namespace SpecFlowProject.Features
     testRunner.Then("the bill total should be 19.35", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 25
-    testRunner.When("2 more people join the group at 20:00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("2 more people join the group at 19:00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 26
     testRunner.And("they order 2 mains and 2 drinks", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -257,7 +257,7 @@ namespace SpecFlowProject.Features
             {
                 this.ScenarioStart();
 #line 32
-    testRunner.Given("an order for a group of 4 people placed at 18:15", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("an order for a group of 4 people placed at 18:59", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 33
     testRunner.And("the order contains 4 starter, 4 mains and 4 drinks", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -275,7 +275,7 @@ namespace SpecFlowProject.Features
     testRunner.When("1 person cancels their order at 20:00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 39
-    testRunner.And("the order is updated to remove 1 starter, 1 main and 1 drink ordered at 18:15", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+    testRunner.And("the order is updated to remove 1 starter, 1 main and 1 drink ordered at 18:59", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 40
     testRunner.When("the guests request the final bill", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
